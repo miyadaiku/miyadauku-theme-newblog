@@ -12,3 +12,5 @@ build
 .venv
 pip-wheel-metadata
 .eggs
+outputs
+_depends.pickle

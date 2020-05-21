@@ -214,3 +214,6 @@ div.input {
     display: none;
 }
 
+.output_area pre {
+  color: #212529 !important;
+}
