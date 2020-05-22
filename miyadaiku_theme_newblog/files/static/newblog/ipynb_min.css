@@ -192,15 +192,29 @@ div.output_area {
 }
 
 
+.rendered_html img, .rendered_html svg {
+    max-width: 80%;
+    height: auto;
+}
 
+.rendered_html img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /* --------------------------------------------------- */
 /*   miyadaiku style                                   */
 /*------------------------------------------------------*/
 
+
 pre {
   white-space: pre-wrap;
+}
+
+div.input_area > div.highlight {
+  margin: 10px; /*0.4em;*/
 }
 
 div.output_area .MathJax_Display {
@@ -228,13 +242,35 @@ div.input {
 }
 
 
-.prompt {
+.input_prompt {
     min-width:0;
     display: none;
 }
 
 
 .output {
+  margin-top: 1em;
+}
+
+.output_area .prompt {
+    display: none !important;
+}
+
+.output_area .output_text {
+  display:flex;
+}
+
+.output_area .output_text:before {
+  content: ">>>";
+  color: #887c7c;
+  font-size:9pt;
+  font-family: Arial Black;
+  padding-left: 10px;;
+  padding-right: 10px;
+}
+
+
+.output_area .output {
   margin: 0.4em 0 0 0;
 }
 
@@ -258,17 +294,3 @@ div.input {
 }
 
 
-
-.output_area .prompt {
-  min-width: 30px;
-  display: block;
-  margin: 0 0 0 0.4em;
-  padding: 0 0.8em 0 0;
-}
-
-.output_area .prompt:before {
-  content: '>>>';
-  color: #887c7c;
-  font-size:8pt;
-  font-family: Arial Black;
-}
