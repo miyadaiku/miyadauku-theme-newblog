@@ -6,14 +6,16 @@
   <div class="row">
     <div class="col-md-9">
 
-      {% if page.get_config('title', '') %}
-        <h1 class="article-title">
-          {{ page.title }}
-        </h1>
-      {% endif %}
-
       <div class="article">
-        <div class="article-body">
+        {% if page.get_config('title', '') %}
+        <div class="article_title">
+          <h1>
+            {{ page.title }}
+          </h1>
+        </div>
+        {% endif %}
+
+        <div class="article_body">
           {{ page.html }}
         </div>
       </div>
@@ -21,10 +23,15 @@
 
     <div class="col-md-3">
       <div class="article_metadata">
-        <div class="article-date"> {{ page.date.strftime("%Y-%m-%d") if page.date else "" }} </div>
-        {% for tag in page.tags %}
-          <span class="article-tag-link">{{ page.link_to('/index_tags.yml', group_value=tag, text=tag) }}</span>
-        {% endfor %}
+        {% if page.date %}
+          <div class="article_date"> {{ page.date.strftime("%Y-%m-%d") }} </div>
+          <hr/>
+        {% endif %}
+        <div class="article_tag_links">
+          {% for tag in page.tags %}
+            <span class="article_tag_link">{{ page.link_to('/index_tags.yml', group_value=tag, text=tag) }}</span>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
