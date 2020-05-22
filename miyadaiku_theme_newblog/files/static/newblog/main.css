@@ -4,6 +4,7 @@
 
 body {
   background-color: #d4e2df;
+  line-height: 1.7;
 }
 
 .highlight {
@@ -126,7 +127,7 @@ blockquote {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 .article_summary img {
