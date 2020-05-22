@@ -35,9 +35,9 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  margin: 0.8em 0 0.8em;
+  margin: 1.5em 0 0.8em;
   font-weight: bold;
-  color: #788896;
+  color: #22a99d;
 }
 
 h3 {
@@ -45,6 +45,12 @@ h3 {
   margin: 0.8em 0 0.8em;
   color: #788896;
   font-weight: bold;
+}
+
+
+blockquote {
+  margin: 1em 0 1em 2em;
+  font-size: 1.5em;
 }
 
 .index_container {
