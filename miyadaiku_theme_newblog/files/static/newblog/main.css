@@ -101,6 +101,7 @@ h3 {
   overflow: hidden;
   cursor: pointer;
   box-shadow: 10px 15px 23px -15px rgba(0, 0, 0, 0.75);
+  vertical-align: bottom; /* required to align in Safari */
 }
 
 .articlebox:hover {
@@ -181,17 +182,15 @@ h3 {
 }
 
 .copyright {
-  width:100%;
-  text-align: right;
   margin-top: 3em;
+  white-space: nowrap;
+  font-size: 12px;
+  text-align: center;
 }
 
-.copyright-text {
-  background-color: white;
-  padding: 0.5em 1em;
-  border-radius: 5px;
+.copyright p {
+  margin-bottom: 2px;
 }
-
 
 .index-pagination-button-current {
   color: #561610 !important;

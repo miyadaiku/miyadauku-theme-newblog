@@ -66,6 +66,7 @@ MathJax.Hub.Config({
 
 {% block body %} 
 <div>
+
 {%block navbar %}
 <div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -104,10 +105,16 @@ MathJax.Hub.Config({
 
 
 <div class="container">
-  <div class="copyright">
-      <span class="copyright-text">{{page.copyright}}</span>
-  </div>	
+  <div class="row">
+    <div class="col-md-9"></div>
+    <div class="col-md-3 copyright">
+      <p class="copyright-text">{{page.copyright}}</p>
+      <p class="copyright-text">Powered by <a href="https://github.com/miyadaiku/miyadaiku">miyadaiku</a></p>
+    </div>
+  </div>
 </div>
 
+
 </div>
+
 {% endblock body %}
