@@ -36,16 +36,17 @@
 
     <div class="articlebox" onclick="
         (function (ev) {
-            window.location = '{{page.path_to(article)}}';
+            window.location = '{{ page.path_to(article) }}';
             ev.preventDefault();
          })()">
-      
-      <div class="article_summary">
-        {% if article.get_config('title', '') %}
-            <div class="entry-title article_summary_title">{{article.title}}</div>
-        {% endif %}
-        <div class='article_summary_body'>{{ article.get_abstract(256)}}</div>
-      </div>
+      <a class="articlebox_ref" href="{{ page.path_to(article) }}">
+        <div class="article_summary">
+          {% if article.get_config('title', '') %}
+              <div class="entry-title article_summary_title">{{article.title}}</div>
+          {% endif %}
+          <div class='article_summary_body'>{{ article.get_abstract(256)}}</div>
+        </div>
+      </a>
     </div>
   {% endfor %}
   </div>

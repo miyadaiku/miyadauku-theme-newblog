@@ -118,6 +118,15 @@ blockquote {
   box-shadow: 0 0 0 5pt #f73c3c;
 }
 
+.articlebox .articlebox_ref {
+  display: block;
+  color: #212529;
+}
+
+.articlebox .articlebox_ref:hover {
+  text-decoration: none;
+}
+
 .articlebox h1, .articlebox h2 {
    font-size: 1.1em;
 }
