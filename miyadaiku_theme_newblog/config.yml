@@ -1,4 +1,8 @@
+
+pygments_style: default
+
 og_description: default page desctiption here
+
 copyright: Copyright © 20xx copyright holder
 
 indexpage_max_articles: 30

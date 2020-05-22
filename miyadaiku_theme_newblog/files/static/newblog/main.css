@@ -9,15 +9,18 @@ body {
 .highlight {
   padding: 10px 0 10px 10px;
   margin-bottom: 1em;
+  background-color: #e8e8e8;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
 }
 
 pre {
-  margin-bottom: 0;
-  color: #d0d0d0;
+/*  margin-bottom: 0;
+  color: #d0d0d0;*/
 }
 
 pre code {
-  background-color: #202020 !important;
+  background-color: #e8e8e8 !important; 
 }
 
 h1 {

@@ -71,7 +71,7 @@ div.input_area {
   border-radius: 2px;
   background: #f7f7f7;
   line-height: 1.21429em;
-  background: #202020;
+  background: #efefef;
 
 }
 /* This is needed so that empty prompt areas can collapse to zero height when there
@@ -124,6 +124,8 @@ div.input_area > div.highlight {
   padding: 0px;
   background-color: transparent;
 }
+
+/*
 div.input_area > div.highlight > pre {
   margin: 0px;
   border: none;
@@ -131,7 +133,7 @@ div.input_area > div.highlight > pre {
   background-color: transparent;
 }
 
-
+*/
 
 div.output_wrapper {
   /* this position must be relative to enable descendents to be absolute within it */
@@ -188,12 +190,29 @@ div.output_area {
   flex-direction: row;
   align-items: stretch;
 }
+
+
+
+
+
+/* --------------------------------------------------- */
+/*   miyadaiku style                                   */
+/*------------------------------------------------------*/
+
+pre {
+  white-space: pre-wrap;
+}
+
 div.output_area .MathJax_Display {
   text-align: left !important;
 }
 
 div.input {
   margin-bottom:0.5em;
+}
+
+.cell pre {
+  margin-bottom: 0;
 }
 
 
@@ -214,6 +233,42 @@ div.input {
     display: none;
 }
 
+
+.output {
+  margin: 0.4em 0 0 0;
+}
+
+.output_area pre {
+  margin-bottom: 0;
+}
+
+
 .output_area pre {
   color: #212529 !important;
+}
+
+
+.code_cell {
+/*  border: solid 1px #d6d6d6 !important;*/
+  margin-bottom: 1em !important;
+}
+
+.code_cell .input {
+  margin-bottom: 0;
+}
+
+
+
+.output_area .prompt {
+  min-width: 30px;
+  display: block;
+  margin: 0 0 0 0.4em;
+  padding: 0 0.8em 0 0;
+}
+
+.output_area .prompt:before {
+  content: '>>>';
+  color: #887c7c;
+  font-size:8pt;
+  font-family: Arial Black;
 }
