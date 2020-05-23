@@ -209,6 +209,14 @@ div.output_area {
 /*------------------------------------------------------*/
 
 
+.rendered_html img, .rendered_html svg {
+  max-width: 95%;
+}
+
+.output_png img {
+  max-width: 95%;
+}
+
 pre {
   white-space: pre-wrap;
 }
