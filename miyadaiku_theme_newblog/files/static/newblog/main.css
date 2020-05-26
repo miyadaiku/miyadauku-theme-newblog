@@ -172,6 +172,10 @@ blockquote {
 }
 
 
+.article_body img {
+  max-width: 95%;
+}
+
 
 
 .article_metadata {
