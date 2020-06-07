@@ -16,3 +16,4 @@ themes:
   - miyadaiku.themes.sample.blog
   - miyadaiku_theme_bootstrap4
   - miyadaiku_theme_fontawesome
+  - miyadaiku.themes.ipynb

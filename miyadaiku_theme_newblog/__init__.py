@@ -1,6 +1,6 @@
 import pkg_resources
 
-__version__ = "1.8.2"
+__version__ = "1.9.0"
 
 def load_package(site):
     pass

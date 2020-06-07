@@ -25,8 +25,11 @@
 <!-- include font awesome -->
 {{ fontawesome.load_css(page) }}
 
+<!-- include ipynb minimum style -->
+{{ ipynb.load_css_min(page) }}
+
 <link rel="stylesheet" href="{{ page.path_to('/static/css/sample_index_pagenation.css') }}">
-<link href="{{page.path_to('/static/newblog/ipynb_min.css') }}" rel="stylesheet">
+<link href="{{page.path_to('/static/newblog/ipynb_styles.css') }}" rel="stylesheet">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
