@@ -97,7 +97,7 @@ blockquote {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .articlebox {
@@ -223,4 +223,8 @@ blockquote {
 .index-pagination-button-current {
   color: #561610 !important;
   border: 3px solid #203684 !important;
+}
+
+div.cell {
+  padding: 0;
 }
