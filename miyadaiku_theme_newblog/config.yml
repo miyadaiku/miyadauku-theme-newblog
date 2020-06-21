@@ -7,8 +7,7 @@ copyright: Copyright © 20xx copyright holder
 
 indexpage_max_articles: 30
 
-title_fallback: abstract
-
+title_fallback: header
 
 themes:
   - miyadaiku.themes.pygments
