@@ -7,26 +7,6 @@ body {
   line-height: 1.6;
 }
 
-.highlight {
-  padding: 10px 0 10px 10px;
-  margin-bottom: 1em;
-  background-color: #e8e8e8;
-  border: 1px solid #cfcfcf;
-  border-radius: 2px;
-}
-
-a {
-  color: #0e4daf;
-}
-
-pre {
-/*  margin-bottom: 0;
-  color: #d0d0d0;*/
-}
-
-pre code {
-  background-color: #e8e8e8 !important; 
-}
 
 h1 {
   font-size: 2rem;
@@ -50,11 +30,25 @@ h3 {
 
 p {
   color: #404142;
+  margin-bottom: 1em;
 }
 
+/* revert docutils_html5 */
+p:last-child {
+  margin-bottom: 1em;
+}
+
+
 blockquote {
-  margin: 1em 0 1em 2em;
-  font-size: 1.5em;
+  margin: 0 0 0 2em;
+}
+
+a {
+  color: #0e4daf;
+}
+
+code {
+  background-color: inherit;
 }
 
 .index_container {
@@ -114,6 +108,9 @@ blockquote {
   cursor: pointer;
   box-shadow: 10px 15px 23px -15px rgba(0, 0, 0, 0.75);
   vertical-align: bottom; /* required to align in Safari */
+
+
+
 }
 
 .articlebox:hover {
@@ -155,7 +152,6 @@ blockquote {
   font-weight: bold;
   padding-bottom: 5px;
 }
-
 
 
 .article_container {
@@ -204,10 +200,6 @@ blockquote {
   margin-right: 10px;
 }
 
-.code-block {
-  padding: 1em 0 2em;
-}
-
 .copyright {
   margin-top: 3em;
   white-space: nowrap;
@@ -222,8 +214,4 @@ blockquote {
 .index-pagination-button-current {
   color: #561610 !important;
   border: 3px solid #203684 !important;
-}
-
-div.cell {
-  padding: 0;
 }
