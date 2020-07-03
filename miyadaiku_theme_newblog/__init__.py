@@ -1,4 +1,4 @@
-__version__ = "1.10.dev4"
+__version__ = "1.10.0"
 
 def load_package(site):
     pass
