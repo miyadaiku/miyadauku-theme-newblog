@@ -30,7 +30,12 @@ In your config.yml file of your project, add following configuration at `themes`
 History
 -------------------
 
+1.11.0
+~~~~~~~~~~~~
+
+- Adjust CSS.
+
 1.10.0
 ~~~~~~~~~~~~
 
-- Minimize css
+- Minimize CSS.

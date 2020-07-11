@@ -66,13 +66,17 @@ div.input {
 
 
 .output_area .output {
-  margin: 0.4em 0 0 0;
+.  margin: 0.4em 0 0 0;
 }
 
 .output_area pre {
   margin-bottom: 0;
+  max-width: 100%;
 }
 
+.output_subarea {
+  max-width: 100%;
+}
 
 .output_area pre {
   color: #212529 !important;
