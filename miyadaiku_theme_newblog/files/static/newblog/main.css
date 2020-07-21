@@ -196,14 +196,13 @@ a {
 }
 
 .copyright {
-  margin-top: 3em;
-  white-space: nowrap;
+  margin-top: 4em;
   font-size: 12px;
-  text-align: center;
 }
 
 .copyright p {
   margin-bottom: 2px;
+  text-align: center;
 }
 
 .index-pagination-button-current {
