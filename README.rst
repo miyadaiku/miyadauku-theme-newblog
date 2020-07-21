@@ -30,8 +30,11 @@ In your config.yml file of your project, add following configuration at `themes`
 History
 -------------------
 
+
 1.11.0
 ~~~~~~~~~~~~
+
+- Use site_title for the title of index.html page.
 
 - Adjust CSS.
 

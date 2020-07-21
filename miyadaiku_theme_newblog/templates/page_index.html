@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% block title %}
+
+    {{ page.site_title | striptags }}
+
+{% endblock %}
+
 {% block jumbotron %}
 
   {% if page.index_title %}
