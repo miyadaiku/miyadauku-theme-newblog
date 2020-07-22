@@ -50,9 +50,9 @@
 
     {% block articlebox scoped %}
     <div class="articlebox" onclick="
-        (function (ev) {
+        (function f() {
             window.location = '{{ page.path_to(article) }}';
-            ev.preventDefault();
+            window.event.preventDefault();
          })()">
       <a class="articlebox_ref" href="{{ page.path_to(article) }}">
         <div class="article_summary">
