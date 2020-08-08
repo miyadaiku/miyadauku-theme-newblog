@@ -74,6 +74,7 @@ a {
   font-size: 20px;
   color: #5e96d2;
   margin-right: 5px;
+  white-space: nowrap;
 }
 
 .current_tag {
