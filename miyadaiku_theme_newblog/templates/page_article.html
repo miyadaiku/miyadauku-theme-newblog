@@ -32,7 +32,7 @@
         {% endif %}
         <div class="article_tag_links">
           {% for tag in page.tags %}
-            <span class="article_tag_link">{{ page.link_to('/index_tags.yml', group_value=tag, text=tag) }}</span>
+            <span class="article_tag_link">{{ page.link_to('/index_tag.yml', group_value=tag, text=tag) }}</span>
           {% endfor %}
         </div>
       </div>

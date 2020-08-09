@@ -34,7 +34,7 @@
         {{ page.link_to('/index.yml', attrs={'class':clsname}, text="ALL") }}
         {% for tag in contents.tags %}
           {% set clsname= 'current_tag tag_index' if tag == group_value else "tag_index"%}
-          {{ page.link_to('/index_tags.yml', group_value=tag, text=tag, attrs={'class':clsname}) }}
+          {{ page.link_to('/index_tag.yml', group_value=tag, text=tag, attrs={'class':clsname}) }}
         {% endfor %}
 
       {% endblock topblock_tags %}

@@ -31,6 +31,16 @@ History
 -------------------
 
 
+1.12.0
+~~~~~~~~~~~~
+
+- Add TOC to sidebar.
+
+- Rename index_tags.yml to index_tag.yml to override tags index provided by miyadaiku.themes.sample.blog.
+
+- Adjust CSS.
+
+
 1.11.0
 ~~~~~~~~~~~~
 
