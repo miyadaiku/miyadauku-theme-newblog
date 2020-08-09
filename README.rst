@@ -30,6 +30,11 @@ In your config.yml file of your project, add following configuration at `themes`
 History
 -------------------
 
+1.12.1
+~~~~~~~~~~~~
+
+Support miyadaiku 1.16.0.
+
 
 1.12.0
 ~~~~~~~~~~~~

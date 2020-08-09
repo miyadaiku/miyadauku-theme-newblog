@@ -55,6 +55,7 @@
             window.event.preventDefault();
          })()">
       <a class="articlebox_ref" href="{{ page.path_to(article) }}">
+        <a>{# dont remove this to prevent parent anchor being distributed to children.#}</a>
         <div class="article_summary">
           {% if article.get_config('title', '') %}
               <div class="entry-title article_summary_title">{{article.title}}</div>
