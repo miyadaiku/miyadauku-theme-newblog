@@ -24,8 +24,9 @@
     </div>
 
     <div class="col-md-3">
+    {% block rightbar %}
       {% block metadata %}
-      <div class="article_metadata">
+      <div class="article_metadata article_tags">
         {% if page.date %}
           <div class="article_date"> {{ page.date.strftime("%Y-%m-%d") }} </div>
           <hr/>
@@ -47,7 +48,7 @@
         {% endif %}
       {% endif %}
       {% if headers  %}
-        <div class="article_metadata">
+        <div class="article_metadata article_toc">
           <ul class="toc">
             {% for h in headers %}
               {% if h.tag[1] <= '3' %}
@@ -60,6 +61,7 @@
 
       {% endblock toc %}
 
+    {% endblock rightbar %}
     </div>
   </div>
 </div>
