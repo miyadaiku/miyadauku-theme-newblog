@@ -30,6 +30,11 @@ In your config.yml file of your project, add following configuration at `themes`
 History
 -------------------
 
+1.13.0
+~~~~~~~~~~~~
+
+Add block to sidebar.
+
 1.12.1
 ~~~~~~~~~~~~
 
